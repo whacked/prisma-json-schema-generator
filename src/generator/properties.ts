@@ -28,6 +28,10 @@ function getJSONSchemaScalar(fieldType: PrismaPrimitive): JSONSchema7TypeName {
             return 'object'
         case 'Boolean':
             return 'boolean'
+        case 'BigInt':
+            return 'number'
+        case 'Bytes':
+            return 'string'
         default:
             assertNever(fieldType)
     }

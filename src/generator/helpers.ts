@@ -7,6 +7,8 @@ export type PrismaPrimitive =
     | 'Float'
     | 'Json'
     | 'DateTime'
+    | 'Bytes'
+    | 'BigInt'
 
 type ScalarField = DMMF.Field & { type: PrismaPrimitive }
 
